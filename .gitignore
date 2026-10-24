@@ -3,6 +3,12 @@
 *.do
 *.qdb
 *.qtl
+*.ini
+*.vstf
+*.opt
+*.wlf
+
+
 
 **/setup/*
 **/work/*

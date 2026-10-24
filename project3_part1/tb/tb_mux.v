@@ -1,3 +1,4 @@
+`timescale 1ps/1ps
 module tb_mux();
 
 
@@ -9,7 +10,7 @@ reg sel;
 wire out;
 
 mux #(
-  .DELAY(4'd10)
+  .DELAY(4'd8)
 ) DUT (
   .a(a),
   .b(b),
