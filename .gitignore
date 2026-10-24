@@ -1,0 +1,15 @@
+*.pdf
+
+*.do
+*.qdb
+*.qtl
+
+**/setup/*
+**/work/*
+
+*.rules
+*.log
+
+*.jpg
+*.png
+
