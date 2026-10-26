@@ -1,3 +1,4 @@
+`timescale 1ps/1ps //remove the delays while synthesizing
 module process_delay_model #(
     parameter DELAY = 10
 ) (

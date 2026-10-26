@@ -1,10 +1,10 @@
 module tb_arbiter_puf();
 
-parameter C_BITS = /*<FIXME>*/;
-parameter R_BITS = /*<FIXME>*/;
+parameter C_BITS = 4;/*<FIXME>*/
+parameter R_BITS = 4;/*<FIXME>*/
+parameter DELAY  = 4'b1010;
 
-
-`include delay_params.v
+// `include delay_params.v
 
 reg               reset;
 reg               enable;
