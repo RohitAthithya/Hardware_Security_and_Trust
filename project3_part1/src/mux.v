@@ -1,11 +1,13 @@
 module mux #(
   parameter [3:0] DELAY = 10
 )(
+    //outputs
+    output out,
+
+    //inputs
     input a,
     input b,
-    input sel,
-
-    output out
+    input sel
 );
 
 wire mux_a;
