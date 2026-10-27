@@ -26,3 +26,4 @@
 !**/tb/tb_arbiter_puf_output.txt
 !**/tb/tb_puf_1rbit_4_16_output.txt
 !**/tb/puf_1rbit_test_results.xlsx
+!**/tb/crp_results/crp_tables_for_report.xlsx
