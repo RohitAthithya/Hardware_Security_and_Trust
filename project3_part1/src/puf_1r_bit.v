@@ -21,27 +21,27 @@ assign mux_output_btm[C_BITS-1+1] = enable;
 genvar i;
 generate
     for (i=C_BITS; i > 0; i = i - 1) begin
-        mux mux_top #(
-            DELAY = DELAY[]
-        )(
+        mux #(
+            .DELAY(DELAY[8*(i-1)+: 4])
+        ) mux_top (
             .out(mux_output_top[i-1]),
-            .a(mux_output_btm[i]),
-            .b(mux_output_top[i]),
-            .sel(challenge[i])
-        );
-        mux mux_bottom #(
-            DELAY = 
-        )(
-            .out(mux_output_btm[i-1]),
-            .a(mux_output_top[i]),
             .b(mux_output_btm[i]),
-            .sel(challenge[i])
+            .a(mux_output_top[i]),
+            .sel(challenge[i-1])
+        );
+        mux #(
+            .DELAY(DELAY[8*(i-1)+4 +: 4])
+        ) mux_bottom (
+            .out(mux_output_btm[i-1]),
+            .b(mux_output_top[i]),
+            .a(mux_output_btm[i]),
+            .sel(challenge[i-1])
         );
     end
 
 endgenerate
 
-dff out_reg(
+d_ff out_reg(
     .q(resp),
 
     .d(mux_output_top[0]),
