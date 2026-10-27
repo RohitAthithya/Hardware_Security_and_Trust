@@ -16,7 +16,7 @@ genvar i;
 generate
   for (i = 0; i < R_BITS; i = i + 1) begin : gen_puf
     puf_1rbit #(
-      .C_BIT(C_BITS),
+      .C_BITS(C_BITS),
       .DELAY(DELAY[i*DELAY_BITS_PER_RESPONSE +: DELAY_BITS_PER_RESPONSE])
     ) puf_inst (
       .resp(resp[i]),
