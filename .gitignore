@@ -7,7 +7,7 @@
 *.vstf
 *.opt
 *.wlf
-
+**/transcript
 
 
 **/setup/*
