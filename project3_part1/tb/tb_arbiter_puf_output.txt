@@ -1,0 +1,14 @@
+# vsim -voptargs="+acc" -batch -quiet -l ../tb/tb_arbiter_puf_output.txt work.tb_arbiter_puf -do "run -all; quit -f" -L 220model_ver 
+# Start time: 20:42:06 on Oct 26,2026
+# 
+# run -all
+# Challenge: 0000, Response: 1110
+# Challenge: 0001, Response: 1110
+# Challenge: 0010, Response: 1110
+# Challenge: 0011, Response: 1110
+# ** Note: $stop    : ../tb/tb_arbiter_puf.v(74)
+#    Time: 376 ps  Iteration: 0  Instance: /tb_arbiter_puf
+# Break in Module tb_arbiter_puf at ../tb/tb_arbiter_puf.v line 74
+# quit -f
+# End time: 20:42:06 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
