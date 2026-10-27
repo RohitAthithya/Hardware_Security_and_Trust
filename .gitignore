@@ -11,10 +11,12 @@
 **/setup/*
 **/work/*
 **/report/*
+**/tb/crp_results/*
 
 *.rules
 *.log
 *.txt
+**/modelsim/verify_and_collect.py
 
 *.jpg
 *.png
