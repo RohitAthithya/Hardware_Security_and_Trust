@@ -10,6 +10,7 @@
 
 **/setup/*
 **/work/*
+**/report/*
 
 *.rules
 *.log
