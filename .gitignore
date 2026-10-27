@@ -1,5 +1,3 @@
-*.pdf
-
 *.do
 *.qdb
 *.qtl
@@ -15,7 +13,12 @@
 
 *.rules
 *.log
+*.txt
 
 *.jpg
 *.png
+*.xlsx
+*.docx
+*.pdf
 
+!**/tb/*.xlsx
