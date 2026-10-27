@@ -22,3 +22,4 @@
 *.pdf
 
 !**/tb/*.xlsx
+!**/tb/tb_arbiter_puf_output.txt
