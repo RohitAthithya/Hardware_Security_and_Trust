@@ -1,0 +1,272 @@
+# vsim -voptargs="+acc" -batch -quiet -l ../tb/tb_puf_1rbit_4_16_output.txt work.tb_puf_1rbit_4_16 -do "run -all; quit -f" -L 220model_ver 
+# Start time: 10:48:32 on Oct 27,2026
+# 
+# run -all
+# puf_1rbit configurations (4,1) and (16,1)
+# CONFIG DUT_4BIT C_BITS=4 R_BITS=1 DELAY=df66ffad
+# CONFIG DUT_16BIT C_BITS=16 R_BITS=1 DELAY=db99567da7f6f57f67aa59b665d7fad7
+# 257 ps PASS DUT_4BIT challenge=0000000000000000 expected=0 actual=0 : initial reset
+# 257 ps PASS DUT_16BIT challenge=0000000000000000 expected=0 actual=0 : initial reset
+# 513 ps PASS DUT_4BIT challenge=0000000000000000 expected=0 actual=0 : idle with enable low
+# 513 ps PASS DUT_16BIT challenge=0000000000000000 expected=0 actual=0 : idle with enable low
+# Four-bit challenge sweep 1 of 2
+# 577 ps PASS DUT_4BIT challenge=0000000000000000 expected=0 actual=0 : reset before measurement
+# 642 ps PASS DUT_4BIT challenge=0000000000000000 expected=0 actual=0 : captured response
+# 706 ps PASS DUT_4BIT challenge=0000000000000001 expected=0 actual=0 : reset before measurement
+# 771 ps PASS DUT_4BIT challenge=0000000000000001 expected=1 actual=1 : captured response
+# 835 ps PASS DUT_4BIT challenge=0000000000000010 expected=0 actual=0 : reset before measurement
+# 900 ps PASS DUT_4BIT challenge=0000000000000010 expected=0 actual=0 : captured response
+# 964 ps PASS DUT_4BIT challenge=0000000000000011 expected=0 actual=0 : reset before measurement
+# 1029 ps PASS DUT_4BIT challenge=0000000000000011 expected=1 actual=1 : captured response
+# 1093 ps PASS DUT_4BIT challenge=0000000000000100 expected=0 actual=0 : reset before measurement
+# 1158 ps PASS DUT_4BIT challenge=0000000000000100 expected=0 actual=0 : captured response
+# 1222 ps PASS DUT_4BIT challenge=0000000000000101 expected=0 actual=0 : reset before measurement
+# 1287 ps PASS DUT_4BIT challenge=0000000000000101 expected=1 actual=1 : captured response
+# 1351 ps PASS DUT_4BIT challenge=0000000000000110 expected=0 actual=0 : reset before measurement
+# 1416 ps PASS DUT_4BIT challenge=0000000000000110 expected=0 actual=0 : captured response
+# 1480 ps PASS DUT_4BIT challenge=0000000000000111 expected=0 actual=0 : reset before measurement
+# 1545 ps PASS DUT_4BIT challenge=0000000000000111 expected=1 actual=1 : captured response
+# 1609 ps PASS DUT_4BIT challenge=0000000000001000 expected=0 actual=0 : reset before measurement
+# 1674 ps PASS DUT_4BIT challenge=0000000000001000 expected=1 actual=1 : captured response
+# 1738 ps PASS DUT_4BIT challenge=0000000000001001 expected=0 actual=0 : reset before measurement
+# 1803 ps PASS DUT_4BIT challenge=0000000000001001 expected=0 actual=0 : captured response
+# 1867 ps PASS DUT_4BIT challenge=0000000000001010 expected=0 actual=0 : reset before measurement
+# 1932 ps PASS DUT_4BIT challenge=0000000000001010 expected=0 actual=0 : captured response
+# 1996 ps PASS DUT_4BIT challenge=0000000000001011 expected=0 actual=0 : reset before measurement
+# 2061 ps PASS DUT_4BIT challenge=0000000000001011 expected=1 actual=1 : captured response
+# 2125 ps PASS DUT_4BIT challenge=0000000000001100 expected=0 actual=0 : reset before measurement
+# 2190 ps PASS DUT_4BIT challenge=0000000000001100 expected=0 actual=0 : captured response
+# 2254 ps PASS DUT_4BIT challenge=0000000000001101 expected=0 actual=0 : reset before measurement
+# 2319 ps PASS DUT_4BIT challenge=0000000000001101 expected=1 actual=1 : captured response
+# 2383 ps PASS DUT_4BIT challenge=0000000000001110 expected=0 actual=0 : reset before measurement
+# 2448 ps PASS DUT_4BIT challenge=0000000000001110 expected=1 actual=1 : captured response
+# 2512 ps PASS DUT_4BIT challenge=0000000000001111 expected=0 actual=0 : reset before measurement
+# 2577 ps PASS DUT_4BIT challenge=0000000000001111 expected=0 actual=0 : captured response
+# Four-bit challenge sweep 2 of 2
+# 2641 ps PASS DUT_4BIT challenge=0000000000000000 expected=0 actual=0 : reset before measurement
+# 2706 ps PASS DUT_4BIT challenge=0000000000000000 expected=0 actual=0 : captured response
+# 2770 ps PASS DUT_4BIT challenge=0000000000000001 expected=0 actual=0 : reset before measurement
+# 2835 ps PASS DUT_4BIT challenge=0000000000000001 expected=1 actual=1 : captured response
+# 2899 ps PASS DUT_4BIT challenge=0000000000000010 expected=0 actual=0 : reset before measurement
+# 2964 ps PASS DUT_4BIT challenge=0000000000000010 expected=0 actual=0 : captured response
+# 3028 ps PASS DUT_4BIT challenge=0000000000000011 expected=0 actual=0 : reset before measurement
+# 3093 ps PASS DUT_4BIT challenge=0000000000000011 expected=1 actual=1 : captured response
+# 3157 ps PASS DUT_4BIT challenge=0000000000000100 expected=0 actual=0 : reset before measurement
+# 3222 ps PASS DUT_4BIT challenge=0000000000000100 expected=0 actual=0 : captured response
+# 3286 ps PASS DUT_4BIT challenge=0000000000000101 expected=0 actual=0 : reset before measurement
+# 3351 ps PASS DUT_4BIT challenge=0000000000000101 expected=1 actual=1 : captured response
+# 3415 ps PASS DUT_4BIT challenge=0000000000000110 expected=0 actual=0 : reset before measurement
+# 3480 ps PASS DUT_4BIT challenge=0000000000000110 expected=0 actual=0 : captured response
+# 3544 ps PASS DUT_4BIT challenge=0000000000000111 expected=0 actual=0 : reset before measurement
+# 3609 ps PASS DUT_4BIT challenge=0000000000000111 expected=1 actual=1 : captured response
+# 3673 ps PASS DUT_4BIT challenge=0000000000001000 expected=0 actual=0 : reset before measurement
+# 3738 ps PASS DUT_4BIT challenge=0000000000001000 expected=1 actual=1 : captured response
+# 3802 ps PASS DUT_4BIT challenge=0000000000001001 expected=0 actual=0 : reset before measurement
+# 3867 ps PASS DUT_4BIT challenge=0000000000001001 expected=0 actual=0 : captured response
+# 3931 ps PASS DUT_4BIT challenge=0000000000001010 expected=0 actual=0 : reset before measurement
+# 3996 ps PASS DUT_4BIT challenge=0000000000001010 expected=0 actual=0 : captured response
+# 4060 ps PASS DUT_4BIT challenge=0000000000001011 expected=0 actual=0 : reset before measurement
+# 4125 ps PASS DUT_4BIT challenge=0000000000001011 expected=1 actual=1 : captured response
+# 4189 ps PASS DUT_4BIT challenge=0000000000001100 expected=0 actual=0 : reset before measurement
+# 4254 ps PASS DUT_4BIT challenge=0000000000001100 expected=0 actual=0 : captured response
+# 4318 ps PASS DUT_4BIT challenge=0000000000001101 expected=0 actual=0 : reset before measurement
+# 4383 ps PASS DUT_4BIT challenge=0000000000001101 expected=1 actual=1 : captured response
+# 4447 ps PASS DUT_4BIT challenge=0000000000001110 expected=0 actual=0 : reset before measurement
+# 4512 ps PASS DUT_4BIT challenge=0000000000001110 expected=1 actual=1 : captured response
+# 4576 ps PASS DUT_4BIT challenge=0000000000001111 expected=0 actual=0 : reset before measurement
+# 4641 ps PASS DUT_4BIT challenge=0000000000001111 expected=0 actual=0 : captured response
+# Four-bit retention and asynchronous reset
+# 4705 ps PASS DUT_4BIT challenge=0000000000000001 expected=0 actual=0 : reset before measurement
+# 4770 ps PASS DUT_4BIT challenge=0000000000000001 expected=1 actual=1 : captured response
+# 4834 ps PASS DUT_4BIT challenge=0000000000000001 expected=1 actual=1 : response retained after enable falls
+# 4899 ps PASS DUT_4BIT challenge=0000000000000001 expected=0 actual=0 : asynchronous reset while clock stays high
+# 4963 ps PASS DUT_4BIT challenge=0000000000000001 expected=0 actual=0 : no recapture without a new clock edge
+# Sixteen-bit directed sweep 1 of 2
+# 5219 ps PASS DUT_16BIT challenge=0000000000000000 expected=0 actual=0 : reset before measurement
+# 5476 ps PASS DUT_16BIT challenge=0000000000000000 expected=0 actual=0 : captured response
+# 5732 ps PASS DUT_16BIT challenge=1111111111111111 expected=0 actual=0 : reset before measurement
+# 5989 ps PASS DUT_16BIT challenge=1111111111111111 expected=0 actual=0 : captured response
+# 6245 ps PASS DUT_16BIT challenge=1010101010101010 expected=0 actual=0 : reset before measurement
+# 6502 ps PASS DUT_16BIT challenge=1010101010101010 expected=0 actual=0 : captured response
+# 6758 ps PASS DUT_16BIT challenge=0101010101010101 expected=0 actual=0 : reset before measurement
+# 7015 ps PASS DUT_16BIT challenge=0101010101010101 expected=1 actual=1 : captured response
+# 7271 ps PASS DUT_16BIT challenge=0000000000000001 expected=0 actual=0 : reset before measurement
+# 7528 ps PASS DUT_16BIT challenge=0000000000000001 expected=1 actual=1 : captured response
+# 7784 ps PASS DUT_16BIT challenge=0000000000000010 expected=0 actual=0 : reset before measurement
+# 8041 ps PASS DUT_16BIT challenge=0000000000000010 expected=1 actual=1 : captured response
+# 8297 ps PASS DUT_16BIT challenge=0000000000000100 expected=0 actual=0 : reset before measurement
+# 8554 ps PASS DUT_16BIT challenge=0000000000000100 expected=1 actual=1 : captured response
+# 8810 ps PASS DUT_16BIT challenge=0000000000001000 expected=0 actual=0 : reset before measurement
+# 9067 ps PASS DUT_16BIT challenge=0000000000001000 expected=1 actual=1 : captured response
+# 9323 ps PASS DUT_16BIT challenge=0000000000010000 expected=0 actual=0 : reset before measurement
+# 9580 ps PASS DUT_16BIT challenge=0000000000010000 expected=1 actual=1 : captured response
+# 9836 ps PASS DUT_16BIT challenge=0000000000100000 expected=0 actual=0 : reset before measurement
+# 10093 ps PASS DUT_16BIT challenge=0000000000100000 expected=1 actual=1 : captured response
+# 10349 ps PASS DUT_16BIT challenge=0000000001000000 expected=0 actual=0 : reset before measurement
+# 10606 ps PASS DUT_16BIT challenge=0000000001000000 expected=1 actual=1 : captured response
+# 10862 ps PASS DUT_16BIT challenge=0000000010000000 expected=0 actual=0 : reset before measurement
+# 11119 ps PASS DUT_16BIT challenge=0000000010000000 expected=1 actual=1 : captured response
+# 11375 ps PASS DUT_16BIT challenge=0000000100000000 expected=0 actual=0 : reset before measurement
+# 11632 ps PASS DUT_16BIT challenge=0000000100000000 expected=1 actual=1 : captured response
+# 11888 ps PASS DUT_16BIT challenge=0000001000000000 expected=0 actual=0 : reset before measurement
+# 12145 ps PASS DUT_16BIT challenge=0000001000000000 expected=1 actual=1 : captured response
+# 12401 ps PASS DUT_16BIT challenge=0000010000000000 expected=0 actual=0 : reset before measurement
+# 12658 ps PASS DUT_16BIT challenge=0000010000000000 expected=1 actual=1 : captured response
+# 12914 ps PASS DUT_16BIT challenge=0000100000000000 expected=0 actual=0 : reset before measurement
+# 13171 ps PASS DUT_16BIT challenge=0000100000000000 expected=1 actual=1 : captured response
+# 13427 ps PASS DUT_16BIT challenge=0001000000000000 expected=0 actual=0 : reset before measurement
+# 13684 ps PASS DUT_16BIT challenge=0001000000000000 expected=1 actual=1 : captured response
+# 13940 ps PASS DUT_16BIT challenge=0010000000000000 expected=0 actual=0 : reset before measurement
+# 14197 ps PASS DUT_16BIT challenge=0010000000000000 expected=1 actual=1 : captured response
+# 14453 ps PASS DUT_16BIT challenge=0100000000000000 expected=0 actual=0 : reset before measurement
+# 14710 ps PASS DUT_16BIT challenge=0100000000000000 expected=1 actual=1 : captured response
+# 14966 ps PASS DUT_16BIT challenge=1000000000000000 expected=0 actual=0 : reset before measurement
+# 15223 ps PASS DUT_16BIT challenge=1000000000000000 expected=1 actual=1 : captured response
+# 15479 ps PASS DUT_16BIT challenge=1111111111111110 expected=0 actual=0 : reset before measurement
+# 15736 ps PASS DUT_16BIT challenge=1111111111111110 expected=1 actual=1 : captured response
+# 15992 ps PASS DUT_16BIT challenge=1111111111111101 expected=0 actual=0 : reset before measurement
+# 16249 ps PASS DUT_16BIT challenge=1111111111111101 expected=0 actual=0 : captured response
+# 16505 ps PASS DUT_16BIT challenge=1111111111111011 expected=0 actual=0 : reset before measurement
+# 16762 ps PASS DUT_16BIT challenge=1111111111111011 expected=0 actual=0 : captured response
+# 17018 ps PASS DUT_16BIT challenge=1111111111110111 expected=0 actual=0 : reset before measurement
+# 17275 ps PASS DUT_16BIT challenge=1111111111110111 expected=0 actual=0 : captured response
+# 17531 ps PASS DUT_16BIT challenge=1111111111101111 expected=0 actual=0 : reset before measurement
+# 17788 ps PASS DUT_16BIT challenge=1111111111101111 expected=0 actual=0 : captured response
+# 18044 ps PASS DUT_16BIT challenge=1111111111011111 expected=0 actual=0 : reset before measurement
+# 18301 ps PASS DUT_16BIT challenge=1111111111011111 expected=0 actual=0 : captured response
+# 18557 ps PASS DUT_16BIT challenge=1111111110111111 expected=0 actual=0 : reset before measurement
+# 18814 ps PASS DUT_16BIT challenge=1111111110111111 expected=0 actual=0 : captured response
+# 19070 ps PASS DUT_16BIT challenge=1111111101111111 expected=0 actual=0 : reset before measurement
+# 19327 ps PASS DUT_16BIT challenge=1111111101111111 expected=0 actual=0 : captured response
+# 19583 ps PASS DUT_16BIT challenge=1111111011111111 expected=0 actual=0 : reset before measurement
+# 19840 ps PASS DUT_16BIT challenge=1111111011111111 expected=0 actual=0 : captured response
+# 20096 ps PASS DUT_16BIT challenge=1111110111111111 expected=0 actual=0 : reset before measurement
+# 20353 ps PASS DUT_16BIT challenge=1111110111111111 expected=1 actual=1 : captured response
+# 20609 ps PASS DUT_16BIT challenge=1111101111111111 expected=0 actual=0 : reset before measurement
+# 20866 ps PASS DUT_16BIT challenge=1111101111111111 expected=1 actual=1 : captured response
+# 21122 ps PASS DUT_16BIT challenge=1111011111111111 expected=0 actual=0 : reset before measurement
+# 21379 ps PASS DUT_16BIT challenge=1111011111111111 expected=1 actual=1 : captured response
+# 21635 ps PASS DUT_16BIT challenge=1110111111111111 expected=0 actual=0 : reset before measurement
+# 21892 ps PASS DUT_16BIT challenge=1110111111111111 expected=1 actual=1 : captured response
+# 22148 ps PASS DUT_16BIT challenge=1101111111111111 expected=0 actual=0 : reset before measurement
+# 22405 ps PASS DUT_16BIT challenge=1101111111111111 expected=1 actual=1 : captured response
+# 22661 ps PASS DUT_16BIT challenge=1011111111111111 expected=0 actual=0 : reset before measurement
+# 22918 ps PASS DUT_16BIT challenge=1011111111111111 expected=1 actual=1 : captured response
+# 23174 ps PASS DUT_16BIT challenge=0111111111111111 expected=0 actual=0 : reset before measurement
+# 23431 ps PASS DUT_16BIT challenge=0111111111111111 expected=1 actual=1 : captured response
+# 23687 ps PASS DUT_16BIT challenge=0000000000001111 expected=0 actual=0 : reset before measurement
+# 23944 ps PASS DUT_16BIT challenge=0000000000001111 expected=0 actual=0 : captured response
+# 24200 ps PASS DUT_16BIT challenge=0000000011110000 expected=0 actual=0 : reset before measurement
+# 24457 ps PASS DUT_16BIT challenge=0000000011110000 expected=0 actual=0 : captured response
+# 24713 ps PASS DUT_16BIT challenge=0000111100000000 expected=0 actual=0 : reset before measurement
+# 24970 ps PASS DUT_16BIT challenge=0000111100000000 expected=1 actual=1 : captured response
+# 25226 ps PASS DUT_16BIT challenge=1111000000000000 expected=0 actual=0 : reset before measurement
+# 25483 ps PASS DUT_16BIT challenge=1111000000000000 expected=1 actual=1 : captured response
+# 25739 ps PASS DUT_16BIT challenge=0001001000110100 expected=0 actual=0 : reset before measurement
+# 25996 ps PASS DUT_16BIT challenge=0001001000110100 expected=1 actual=1 : captured response
+# 26252 ps PASS DUT_16BIT challenge=0101011001111000 expected=0 actual=0 : reset before measurement
+# 26509 ps PASS DUT_16BIT challenge=0101011001111000 expected=0 actual=0 : captured response
+# 26765 ps PASS DUT_16BIT challenge=1001101010111100 expected=0 actual=0 : reset before measurement
+# 27022 ps PASS DUT_16BIT challenge=1001101010111100 expected=1 actual=1 : captured response
+# 27278 ps PASS DUT_16BIT challenge=1101111010101101 expected=0 actual=0 : reset before measurement
+# 27535 ps PASS DUT_16BIT challenge=1101111010101101 expected=1 actual=1 : captured response
+# Sixteen-bit directed sweep 2 of 2
+# 27791 ps PASS DUT_16BIT challenge=0000000000000000 expected=0 actual=0 : reset before measurement
+# 28048 ps PASS DUT_16BIT challenge=0000000000000000 expected=0 actual=0 : captured response
+# 28304 ps PASS DUT_16BIT challenge=1111111111111111 expected=0 actual=0 : reset before measurement
+# 28561 ps PASS DUT_16BIT challenge=1111111111111111 expected=0 actual=0 : captured response
+# 28817 ps PASS DUT_16BIT challenge=1010101010101010 expected=0 actual=0 : reset before measurement
+# 29074 ps PASS DUT_16BIT challenge=1010101010101010 expected=0 actual=0 : captured response
+# 29330 ps PASS DUT_16BIT challenge=0101010101010101 expected=0 actual=0 : reset before measurement
+# 29587 ps PASS DUT_16BIT challenge=0101010101010101 expected=1 actual=1 : captured response
+# 29843 ps PASS DUT_16BIT challenge=0000000000000001 expected=0 actual=0 : reset before measurement
+# 30100 ps PASS DUT_16BIT challenge=0000000000000001 expected=1 actual=1 : captured response
+# 30356 ps PASS DUT_16BIT challenge=0000000000000010 expected=0 actual=0 : reset before measurement
+# 30613 ps PASS DUT_16BIT challenge=0000000000000010 expected=1 actual=1 : captured response
+# 30869 ps PASS DUT_16BIT challenge=0000000000000100 expected=0 actual=0 : reset before measurement
+# 31126 ps PASS DUT_16BIT challenge=0000000000000100 expected=1 actual=1 : captured response
+# 31382 ps PASS DUT_16BIT challenge=0000000000001000 expected=0 actual=0 : reset before measurement
+# 31639 ps PASS DUT_16BIT challenge=0000000000001000 expected=1 actual=1 : captured response
+# 31895 ps PASS DUT_16BIT challenge=0000000000010000 expected=0 actual=0 : reset before measurement
+# 32152 ps PASS DUT_16BIT challenge=0000000000010000 expected=1 actual=1 : captured response
+# 32408 ps PASS DUT_16BIT challenge=0000000000100000 expected=0 actual=0 : reset before measurement
+# 32665 ps PASS DUT_16BIT challenge=0000000000100000 expected=1 actual=1 : captured response
+# 32921 ps PASS DUT_16BIT challenge=0000000001000000 expected=0 actual=0 : reset before measurement
+# 33178 ps PASS DUT_16BIT challenge=0000000001000000 expected=1 actual=1 : captured response
+# 33434 ps PASS DUT_16BIT challenge=0000000010000000 expected=0 actual=0 : reset before measurement
+# 33691 ps PASS DUT_16BIT challenge=0000000010000000 expected=1 actual=1 : captured response
+# 33947 ps PASS DUT_16BIT challenge=0000000100000000 expected=0 actual=0 : reset before measurement
+# 34204 ps PASS DUT_16BIT challenge=0000000100000000 expected=1 actual=1 : captured response
+# 34460 ps PASS DUT_16BIT challenge=0000001000000000 expected=0 actual=0 : reset before measurement
+# 34717 ps PASS DUT_16BIT challenge=0000001000000000 expected=1 actual=1 : captured response
+# 34973 ps PASS DUT_16BIT challenge=0000010000000000 expected=0 actual=0 : reset before measurement
+# 35230 ps PASS DUT_16BIT challenge=0000010000000000 expected=1 actual=1 : captured response
+# 35486 ps PASS DUT_16BIT challenge=0000100000000000 expected=0 actual=0 : reset before measurement
+# 35743 ps PASS DUT_16BIT challenge=0000100000000000 expected=1 actual=1 : captured response
+# 35999 ps PASS DUT_16BIT challenge=0001000000000000 expected=0 actual=0 : reset before measurement
+# 36256 ps PASS DUT_16BIT challenge=0001000000000000 expected=1 actual=1 : captured response
+# 36512 ps PASS DUT_16BIT challenge=0010000000000000 expected=0 actual=0 : reset before measurement
+# 36769 ps PASS DUT_16BIT challenge=0010000000000000 expected=1 actual=1 : captured response
+# 37025 ps PASS DUT_16BIT challenge=0100000000000000 expected=0 actual=0 : reset before measurement
+# 37282 ps PASS DUT_16BIT challenge=0100000000000000 expected=1 actual=1 : captured response
+# 37538 ps PASS DUT_16BIT challenge=1000000000000000 expected=0 actual=0 : reset before measurement
+# 37795 ps PASS DUT_16BIT challenge=1000000000000000 expected=1 actual=1 : captured response
+# 38051 ps PASS DUT_16BIT challenge=1111111111111110 expected=0 actual=0 : reset before measurement
+# 38308 ps PASS DUT_16BIT challenge=1111111111111110 expected=1 actual=1 : captured response
+# 38564 ps PASS DUT_16BIT challenge=1111111111111101 expected=0 actual=0 : reset before measurement
+# 38821 ps PASS DUT_16BIT challenge=1111111111111101 expected=0 actual=0 : captured response
+# 39077 ps PASS DUT_16BIT challenge=1111111111111011 expected=0 actual=0 : reset before measurement
+# 39334 ps PASS DUT_16BIT challenge=1111111111111011 expected=0 actual=0 : captured response
+# 39590 ps PASS DUT_16BIT challenge=1111111111110111 expected=0 actual=0 : reset before measurement
+# 39847 ps PASS DUT_16BIT challenge=1111111111110111 expected=0 actual=0 : captured response
+# 40103 ps PASS DUT_16BIT challenge=1111111111101111 expected=0 actual=0 : reset before measurement
+# 40360 ps PASS DUT_16BIT challenge=1111111111101111 expected=0 actual=0 : captured response
+# 40616 ps PASS DUT_16BIT challenge=1111111111011111 expected=0 actual=0 : reset before measurement
+# 40873 ps PASS DUT_16BIT challenge=1111111111011111 expected=0 actual=0 : captured response
+# 41129 ps PASS DUT_16BIT challenge=1111111110111111 expected=0 actual=0 : reset before measurement
+# 41386 ps PASS DUT_16BIT challenge=1111111110111111 expected=0 actual=0 : captured response
+# 41642 ps PASS DUT_16BIT challenge=1111111101111111 expected=0 actual=0 : reset before measurement
+# 41899 ps PASS DUT_16BIT challenge=1111111101111111 expected=0 actual=0 : captured response
+# 42155 ps PASS DUT_16BIT challenge=1111111011111111 expected=0 actual=0 : reset before measurement
+# 42412 ps PASS DUT_16BIT challenge=1111111011111111 expected=0 actual=0 : captured response
+# 42668 ps PASS DUT_16BIT challenge=1111110111111111 expected=0 actual=0 : reset before measurement
+# 42925 ps PASS DUT_16BIT challenge=1111110111111111 expected=1 actual=1 : captured response
+# 43181 ps PASS DUT_16BIT challenge=1111101111111111 expected=0 actual=0 : reset before measurement
+# 43438 ps PASS DUT_16BIT challenge=1111101111111111 expected=1 actual=1 : captured response
+# 43694 ps PASS DUT_16BIT challenge=1111011111111111 expected=0 actual=0 : reset before measurement
+# 43951 ps PASS DUT_16BIT challenge=1111011111111111 expected=1 actual=1 : captured response
+# 44207 ps PASS DUT_16BIT challenge=1110111111111111 expected=0 actual=0 : reset before measurement
+# 44464 ps PASS DUT_16BIT challenge=1110111111111111 expected=1 actual=1 : captured response
+# 44720 ps PASS DUT_16BIT challenge=1101111111111111 expected=0 actual=0 : reset before measurement
+# 44977 ps PASS DUT_16BIT challenge=1101111111111111 expected=1 actual=1 : captured response
+# 45233 ps PASS DUT_16BIT challenge=1011111111111111 expected=0 actual=0 : reset before measurement
+# 45490 ps PASS DUT_16BIT challenge=1011111111111111 expected=1 actual=1 : captured response
+# 45746 ps PASS DUT_16BIT challenge=0111111111111111 expected=0 actual=0 : reset before measurement
+# 46003 ps PASS DUT_16BIT challenge=0111111111111111 expected=1 actual=1 : captured response
+# 46259 ps PASS DUT_16BIT challenge=0000000000001111 expected=0 actual=0 : reset before measurement
+# 46516 ps PASS DUT_16BIT challenge=0000000000001111 expected=0 actual=0 : captured response
+# 46772 ps PASS DUT_16BIT challenge=0000000011110000 expected=0 actual=0 : reset before measurement
+# 47029 ps PASS DUT_16BIT challenge=0000000011110000 expected=0 actual=0 : captured response
+# 47285 ps PASS DUT_16BIT challenge=0000111100000000 expected=0 actual=0 : reset before measurement
+# 47542 ps PASS DUT_16BIT challenge=0000111100000000 expected=1 actual=1 : captured response
+# 47798 ps PASS DUT_16BIT challenge=1111000000000000 expected=0 actual=0 : reset before measurement
+# 48055 ps PASS DUT_16BIT challenge=1111000000000000 expected=1 actual=1 : captured response
+# 48311 ps PASS DUT_16BIT challenge=0001001000110100 expected=0 actual=0 : reset before measurement
+# 48568 ps PASS DUT_16BIT challenge=0001001000110100 expected=1 actual=1 : captured response
+# 48824 ps PASS DUT_16BIT challenge=0101011001111000 expected=0 actual=0 : reset before measurement
+# 49081 ps PASS DUT_16BIT challenge=0101011001111000 expected=0 actual=0 : captured response
+# 49337 ps PASS DUT_16BIT challenge=1001101010111100 expected=0 actual=0 : reset before measurement
+# 49594 ps PASS DUT_16BIT challenge=1001101010111100 expected=1 actual=1 : captured response
+# 49850 ps PASS DUT_16BIT challenge=1101111010101101 expected=0 actual=0 : reset before measurement
+# 50107 ps PASS DUT_16BIT challenge=1101111010101101 expected=1 actual=1 : captured response
+# Sixteen-bit retention and asynchronous reset
+# 50363 ps PASS DUT_16BIT challenge=1101111010101101 expected=1 actual=1 : response retained after enable falls
+# 50620 ps PASS DUT_16BIT challenge=1101111010101101 expected=0 actual=0 : asynchronous reset while clock stays high
+# 50876 ps PASS DUT_16BIT challenge=1101111010101101 expected=0 actual=0 : no recapture without a new clock edge
+# PASS: all 252 checks passed; 0 failures.
+# ** Note: $stop    : ../tb/tb_puf_1rbit_4_16.v(201)
+#    Time: 50876 ps  Iteration: 0  Instance: /tb_puf_1rbit_4_16
+# Break in Module tb_puf_1rbit_4_16 at ../tb/tb_puf_1rbit_4_16.v line 201
+# quit -f
+# End time: 10:48:33 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
