@@ -7,16 +7,16 @@
 *.wlf
 **/transcript
 
-
+**/__pycache__/*
 **/setup/*
 **/work/*
 **/report/*
-**/tb/crp_results/*
+**/tb/*_results/*
 
 *.rules
 *.log
 *.txt
-**/modelsim/verify_and_collect.py
+**/modelsim/*.py
 
 *.jpg
 *.png
