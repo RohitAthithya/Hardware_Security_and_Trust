@@ -1,0 +1,36 @@
+{
+    "build_passed": true,
+    "hardware_validated": false,
+    "bitstream": "quartus/output_files/Project3.sof",
+    "bitstream_sha256": "a7763788d835465df2ec90a79076da08658a4add9f546b50642b38c6b5064798",
+    "corner_worst_slack_ns": {
+        "Slow 1100mV 85C Model Setup Summary": 0.941,
+        "Slow 1100mV 85C Model Hold Summary": 0.341,
+        "Slow 1100mV 85C Model Minimum Pulse Width Summary": 1.786,
+        "Slow 1100mV 0C Model Setup Summary": 0.946,
+        "Slow 1100mV 0C Model Hold Summary": 0.352,
+        "Slow 1100mV 0C Model Minimum Pulse Width Summary": 1.798,
+        "Fast 1100mV 85C Model Setup Summary": 2.788,
+        "Fast 1100mV 85C Model Hold Summary": 0.092,
+        "Fast 1100mV 85C Model Minimum Pulse Width Summary": 2.088,
+        "Fast 1100mV 0C Model Setup Summary": 2.948,
+        "Fast 1100mV 0C Model Hold Summary": 0.08,
+        "Fast 1100mV 0C Model Minimum Pulse Width Summary": 2.11
+    },
+    "setup_hold_pulse_met_at_5ns": true,
+    "fitted_alms": 819,
+    "fitted_registers": 189,
+    "source_sha256": {
+        "sources/Counter_group.v": "8b0bd01c01f72a8ea414d4a01035861f08dec7630f70981cbb2b51050b9557e2",
+        "sources/PUF.v": "0c0241af6d907c310d5ec90c249e1f5f608c7c895a8f7bda81ad8e6bb4fe84b2",
+        "sources/RO_basic.v": "f9ef700609644f139c6782dbcbbd49645a6f54d8ee285bce4a33aac19792e82e",
+        "sources/cyclone_v_top.v": "dfac7237b6a67745a83f21589c40b0d2b83635309140d5ea17eec819c7e5f0e7",
+        "sources/ro_counter.v": "81b645f6dfe27118ce6366c168490df4bea2cf3aee0bf73d8055b25fd694d785"
+    },
+    "build_inputs_sha256": {
+        "quartus/Project3.qsf": "7be5cf6c559375498600e311244881df5e5fffb1a57755fd53ca49e21c5f6db2",
+        "quartus/Project3.sdc": "4299dd17bcd252993658a4c2cfffa0b91672dd8fb8226bde07e7c638f2a36c0c",
+        "quartus/ro_placement.tcl": "5de3c1109759d8ba8ab0887a6fe52d401ad241bb8b4d321bc8625a30bd7e7e22"
+    },
+    "simulation_verified": false
+}
