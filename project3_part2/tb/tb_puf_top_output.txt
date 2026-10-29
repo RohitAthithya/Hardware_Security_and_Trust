@@ -1,0 +1,11 @@
+# vsim -voptargs="+acc" -batch -quiet -wlf /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_puf_top.wlf work.tb_puf_top -do "onerror {quit -code 1}; log -r /tb_puf_top/*; run -all; quit -f" -L 220model_ver 
+# Start time: 19:43:10 on Oct 28,2026
+# 
+# onerror {quit -code 1}
+# log -r /tb_puf_top/*
+# run -all
+# PASS: tb_puf_top 23 checks
+# ** Note: $finish    : /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_puf_top.sv(73)
+#    Time: 2359485 ns  Iteration: 0  Instance: /tb_puf_top
+# End time: 19:44:04 on Oct 28,2026, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0

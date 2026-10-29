@@ -1,0 +1,106 @@
+PART 2: RO PUF IMPLEMENTATION
+
+Design
+    64 RO_basic instances retain the original gen_Ro[i].ro_inst hierarchy.
+    Each RO has a NAND and eight NOT gates in feedback; not_9 drives RO_out.
+    Quartus requires the native /* synthesis keep = 1 */ directive here.
+    The initial (* keep = "true" *) form did not preserve this chain in the
+    installed Quartus version; synthesis reduced each RO to one logic cell.
+    The current implementation preserves ten logic cells per RO.
+
+    Four Counter_group instances each consume a separate 16-RO slice.
+    Each group selects RO_out[Cha0] and RO_out[Cha1]. Counter clocks are
+    cross-gated by the opposite counter's done flag. Each 16-bit counter
+    saturates at 65535 after exactly 65535 rising edges and holds until reset.
+    Counters have no enable port. ROs receive Enable = ~reset.
+
+    Group outputs:
+        Done     = done0 | done1
+        Response = done1
+        Invalid  = Done && (count0 == count1)
+    Response is read after completion and settling. Discard invalid results.
+    PUF.Done is the AND of all four group completion flags.
+
+Board use
+    KEY0 pressed: reset. Hold it while changing switches.
+    SW[3:0]: Cha0. SW[7:4]: Cha1. Release KEY0 to start.
+    LEDG[3:0]: response. LEDG[4]: all four groups finished.
+    LEDR[3:0]: invalid flags. A set red LED invalidates that response bit;
+    discard the complete four-bit CRP for collection if any red LED is on.
+    Remaining LEDs are zero. Board clocks are intentionally unused.
+    Use different RO indices for frequency comparisons. Equal indices are
+    a diagnostic: ideal RTL gives a tie, but physical skew can break it.
+
+Verification (run from the Project3 directory)
+    python3 project3_part2/modelsim/run_tests.py
+
+    Benches cover the counter, both muxes and cross-gated races, the delayed
+    RO gate model, and the complete PUF/board wrapper. The runner generates
+    the delayed RO model from the current RTL and uses controlled oscillator
+    periods for integration. Models are simulation-only, never FPGA sources.
+    Logs, WLFs, and source-hashed verification status are saved under tb/.
+
+    ModelSim currently terminates with SIGSYS inside the Codex sandbox,
+    including vlib before compilation. Simulation has NOT passed here.
+    Run the command in a normal terminal with ModelSim on PATH. A successful
+    run prints four PASS summaries and sets verification_status.json passed
+    to true. Do not treat a Quartus build as a substitute for those tests.
+
+FPGA build (run from the Project3 directory)
+    python3 project3_part2/scripts/build_fpga.py
+
+    Target: 5CGXFC5C6F27C7. The script generates placement, synthesizes, fits,
+    checks all 640 node locations, assembles the bitstream, and saves timing
+    reports plus build_status.json under quartus/output_files/.
+    Program quartus/output_files/Project3.sof using Quartus Programmer.
+    Select the correct USB-Blaster and FPGA in Hardware Setup before Start.
+    No JTAG hardware was visible during implementation; programming and
+    physical CRP measurements remain pending.
+
+    Placement is device-specific: 64 separate LABs use X columns
+    11, 13, 15, 17, 21, 23 and Y rows 2 through 12, taking the first 64 cells
+    in X/Y order. These cells were validated by the Fitter rather than
+    enumerated through a portable device-resource API. Each RO uses
+    N=0,6,...,54 in chain order. ro_placement.csv and ro_placement.tcl contain
+    every assignment. ro_fitted_nodes.csv records actual positions, LUT masks,
+    and physical output fanout. A device change requires rechecking legality.
+
+    python3 project3_part2/scripts/render_placement.py
+    This exports SVGs from fitted coordinates. They are diagrams, not GUI
+    screenshots. For the handout's screenshots, open Project3.qpf and Chip
+    Planner; capture the full RO placement and one expanded RO with fan-in
+    and fan-out shown. The X11 display was inaccessible during implementation.
+
+Timing and physical limits
+    Project3.sdc defines eight 5ns analysis clocks at the gated counter-clock
+    outputs. This is an assumed target, not measured RO frequency. Full timing
+    reports cover four device operating corners. There are no blanket false
+    paths or clock-group cuts. Intentional combinational-loop warnings and
+    asynchronous-input/output warnings remain visible.
+
+    Steady-clock setup/hold/pulse checks do not validate gate-generated pulse
+    truncation, cross-domain stop propagation, or asynchronous reset release.
+    The count-equality flag detects simultaneous saturated counts; it is not
+    a general metastability or noise detector. Physical repeatability must be
+    measured. Counter frequencies must remain within their fitted capability.
+    Quartus may duplicate counter registers for routing without adding a
+    synchronizing clock; use fitted reports for actual resource counts.
+
+Hardware collection
+    tb/hardware_crp_template.csv has 16 proposed challenge pairs and two
+    measurement rows per pair. Response and status cells are deliberately
+    blank. Read binary response as LEDG3..LEDG0 and invalid as LEDR3..LEDR0.
+    Preserve invalid attempts. Append replacement challenges explicitly if
+    needed to obtain at least 16 valid CRPs. Increment repeat for new attempts.
+
+    python3 project3_part2/scripts/analyze_crps.py <measured.csv> --output <hd.json>
+
+    The analyzer excludes incomplete/invalid attempts, uses the earliest valid
+    repeat for each canonical CRP, and separately reports challenge variation
+    and same-challenge repeatability. HD is normalized by four response bits.
+    The variation benchmark is 50%; the repeatability ideal is 0%.
+    No hardware CRPs or measured RO frequencies have been generated here.
+    If an oscilloscope is available, measure reset release to completion;
+    estimate the winning RO frequency as 65535/time, allowing for startup.
+
+Part 1 sources, evidence, report files, and spreadsheets are unchanged.

@@ -1,0 +1,13 @@
+# vsim -voptargs="+acc" -batch -quiet -wlf /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_counter_group.wlf work.tb_counter_group -do "onerror {quit -code 1}; log -r /tb_counter_group/*; run -all; quit -f" -L 220model_ver 
+# Start time: 19:43:05 on Oct 28,2026
+# 
+# onerror {quit -code 1}
+# log -r /tb_counter_group/*
+# run -all
+# PASS: counter0 won, count0=65535 count1=32767
+# PASS: counter1 won, count0=32767 count1=65535
+# PASS: tb_counter_group 84 checks
+# ** Note: $finish    : /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_counter_group.sv(98)
+#    Time: 524629 ns  Iteration: 0  Instance: /tb_counter_group
+# End time: 19:43:08 on Oct 28,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

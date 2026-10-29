@@ -1,0 +1,11 @@
+# vsim -voptargs="+acc" -batch -quiet -wlf /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_ro_basic.wlf work.tb_ro_basic -do "onerror {quit -code 1}; log -r /tb_ro_basic/*; run -all; quit -f" -L 220model_ver 
+# Start time: 19:43:09 on Oct 28,2026
+# 
+# onerror {quit -code 1}
+# log -r /tb_ro_basic/*
+# run -all
+# PASS: tb_ro_basic 6 checks; delay-model period only, not FPGA frequency
+# ** Note: $finish    : /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_ro_basic.sv(37)
+#    Time: 530 ns  Iteration: 0  Instance: /tb_ro_basic
+# End time: 19:43:09 on Oct 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

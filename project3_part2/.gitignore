@@ -1,0 +1,8 @@
+/modelsim/build/
+/quartus/db/
+/quartus/incremental_db/
+/quartus/output_files/
+/quartus/Project3_assignment_defaults.qdf
+!/modelsim/run_tests.py
+!/IMPLEMENTATION.txt
+!/tb/*_output.txt

@@ -1,0 +1,11 @@
+# vsim -voptargs="+acc" -batch -quiet -wlf /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_ro_counter.wlf work.tb_ro_counter -do "onerror {quit -code 1}; log -r /tb_ro_counter/*; run -all; quit -f" -L 220model_ver 
+# Start time: 19:43:02 on Oct 28,2026
+# 
+# onerror {quit -code 1}
+# log -r /tb_ro_counter/*
+# run -all
+# PASS: tb_ro_counter 196611 checks
+# ** Note: $finish    : /home/cen598/Documents/cen598/Project3/project3_part2/tb/tb_ro_counter.sv(55)
+#    Time: 196692200 ps  Iteration: 0  Instance: /tb_ro_counter
+# End time: 19:43:05 on Oct 28,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
