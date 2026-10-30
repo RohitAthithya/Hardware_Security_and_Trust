@@ -1,0 +1,231 @@
+# vsim -voptargs="+acc" -batch -quiet -l ../tb/tb_arbiter_puf_output.txt work.tb_arbiter_puf -do "run -all; quit -f" -L 220model_ver 
+# Start time: 10:10:21 on Oct 27,2026
+# 
+# run -all
+# Arbiter PUF: known-answer, parameter, reset and repeatability checks
+# Responses are hexadecimal; the 7-bit challenge is truncated to each DUT's width.
+# 113 ps PASS DUT_A (4,4) challenge=0000000 expected=00000000 actual=00000000 : initial reset
+# 113 ps PASS DUT_MIN (1,1) challenge=0000000 expected=00000000 actual=00000000 : initial reset
+# 113 ps PASS DUT_32 (4,32) challenge=0000000 expected=00000000 actual=00000000 : initial reset
+# 113 ps PASS DUT_WIDE (7,3) challenge=0000000 expected=00000000 actual=00000000 : initial reset
+# 225 ps PASS DUT_A (4,4) challenge=0000000 expected=00000000 actual=00000000 : idle with enable low
+# 225 ps PASS DUT_MIN (1,1) challenge=0000000 expected=00000000 actual=00000000 : idle with enable low
+# 225 ps PASS DUT_32 (4,32) challenge=0000000 expected=00000000 actual=00000000 : idle with enable low
+# 225 ps PASS DUT_WIDE (7,3) challenge=0000000 expected=00000000 actual=00000000 : idle with enable low
+# Four-bit challenge sweep 1 of 2
+# 337 ps PASS DUT_A (4,4) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 337 ps PASS DUT_32 (4,32) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 450 ps PASS DUT_A (4,4) challenge=0000000 expected=0000000e actual=0000000e : captured response
+# 450 ps PASS DUT_32 (4,32) challenge=0000000 expected=eeeeeeee actual=eeeeeeee : captured response
+# 450 ps PASS DUT_MIN (1,1) challenge=0000000 expected=00000000 actual=00000000 : captured response
+# 562 ps PASS DUT_A (4,4) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 562 ps PASS DUT_32 (4,32) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 675 ps PASS DUT_A (4,4) challenge=0000001 expected=00000001 actual=00000001 : captured response
+# 675 ps PASS DUT_32 (4,32) challenge=0000001 expected=11111111 actual=11111111 : captured response
+# 675 ps PASS DUT_MIN (1,1) challenge=0000001 expected=00000001 actual=00000001 : captured response
+# 787 ps PASS DUT_A (4,4) challenge=0000010 expected=00000000 actual=00000000 : reset before measurement
+# 787 ps PASS DUT_32 (4,32) challenge=0000010 expected=00000000 actual=00000000 : reset before measurement
+# 900 ps PASS DUT_A (4,4) challenge=0000010 expected=00000002 actual=00000002 : captured response
+# 900 ps PASS DUT_32 (4,32) challenge=0000010 expected=22222222 actual=22222222 : captured response
+# 900 ps PASS DUT_MIN (1,1) challenge=0000010 expected=00000000 actual=00000000 : captured response
+# 1012 ps PASS DUT_A (4,4) challenge=0000011 expected=00000000 actual=00000000 : reset before measurement
+# 1012 ps PASS DUT_32 (4,32) challenge=0000011 expected=00000000 actual=00000000 : reset before measurement
+# 1125 ps PASS DUT_A (4,4) challenge=0000011 expected=0000000d actual=0000000d : captured response
+# 1125 ps PASS DUT_32 (4,32) challenge=0000011 expected=dddddddd actual=dddddddd : captured response
+# 1125 ps PASS DUT_MIN (1,1) challenge=0000011 expected=00000001 actual=00000001 : captured response
+# 1237 ps PASS DUT_A (4,4) challenge=0000100 expected=00000000 actual=00000000 : reset before measurement
+# 1237 ps PASS DUT_32 (4,32) challenge=0000100 expected=00000000 actual=00000000 : reset before measurement
+# 1350 ps PASS DUT_A (4,4) challenge=0000100 expected=00000002 actual=00000002 : captured response
+# 1350 ps PASS DUT_32 (4,32) challenge=0000100 expected=22222222 actual=22222222 : captured response
+# 1350 ps PASS DUT_MIN (1,1) challenge=0000100 expected=00000000 actual=00000000 : captured response
+# 1462 ps PASS DUT_A (4,4) challenge=0000101 expected=00000000 actual=00000000 : reset before measurement
+# 1462 ps PASS DUT_32 (4,32) challenge=0000101 expected=00000000 actual=00000000 : reset before measurement
+# 1575 ps PASS DUT_A (4,4) challenge=0000101 expected=0000000d actual=0000000d : captured response
+# 1575 ps PASS DUT_32 (4,32) challenge=0000101 expected=dddddddd actual=dddddddd : captured response
+# 1575 ps PASS DUT_MIN (1,1) challenge=0000101 expected=00000001 actual=00000001 : captured response
+# 1687 ps PASS DUT_A (4,4) challenge=0000110 expected=00000000 actual=00000000 : reset before measurement
+# 1687 ps PASS DUT_32 (4,32) challenge=0000110 expected=00000000 actual=00000000 : reset before measurement
+# 1800 ps PASS DUT_A (4,4) challenge=0000110 expected=0000000c actual=0000000c : captured response
+# 1800 ps PASS DUT_32 (4,32) challenge=0000110 expected=cccccccc actual=cccccccc : captured response
+# 1800 ps PASS DUT_MIN (1,1) challenge=0000110 expected=00000000 actual=00000000 : captured response
+# 1912 ps PASS DUT_A (4,4) challenge=0000111 expected=00000000 actual=00000000 : reset before measurement
+# 1912 ps PASS DUT_32 (4,32) challenge=0000111 expected=00000000 actual=00000000 : reset before measurement
+# 2025 ps PASS DUT_A (4,4) challenge=0000111 expected=00000003 actual=00000003 : captured response
+# 2025 ps PASS DUT_32 (4,32) challenge=0000111 expected=33333333 actual=33333333 : captured response
+# 2025 ps PASS DUT_MIN (1,1) challenge=0000111 expected=00000001 actual=00000001 : captured response
+# 2137 ps PASS DUT_A (4,4) challenge=0001000 expected=00000000 actual=00000000 : reset before measurement
+# 2137 ps PASS DUT_32 (4,32) challenge=0001000 expected=00000000 actual=00000000 : reset before measurement
+# 2250 ps PASS DUT_A (4,4) challenge=0001000 expected=0000000b actual=0000000b : captured response
+# 2250 ps PASS DUT_32 (4,32) challenge=0001000 expected=bbbbbbbb actual=bbbbbbbb : captured response
+# 2250 ps PASS DUT_MIN (1,1) challenge=0001000 expected=00000000 actual=00000000 : captured response
+# 2362 ps PASS DUT_A (4,4) challenge=0001001 expected=00000000 actual=00000000 : reset before measurement
+# 2362 ps PASS DUT_32 (4,32) challenge=0001001 expected=00000000 actual=00000000 : reset before measurement
+# 2475 ps PASS DUT_A (4,4) challenge=0001001 expected=00000004 actual=00000004 : captured response
+# 2475 ps PASS DUT_32 (4,32) challenge=0001001 expected=44444444 actual=44444444 : captured response
+# 2475 ps PASS DUT_MIN (1,1) challenge=0001001 expected=00000001 actual=00000001 : captured response
+# 2587 ps PASS DUT_A (4,4) challenge=0001010 expected=00000000 actual=00000000 : reset before measurement
+# 2587 ps PASS DUT_32 (4,32) challenge=0001010 expected=00000000 actual=00000000 : reset before measurement
+# 2700 ps PASS DUT_A (4,4) challenge=0001010 expected=00000004 actual=00000004 : captured response
+# 2700 ps PASS DUT_32 (4,32) challenge=0001010 expected=44444444 actual=44444444 : captured response
+# 2700 ps PASS DUT_MIN (1,1) challenge=0001010 expected=00000000 actual=00000000 : captured response
+# 2812 ps PASS DUT_A (4,4) challenge=0001011 expected=00000000 actual=00000000 : reset before measurement
+# 2812 ps PASS DUT_32 (4,32) challenge=0001011 expected=00000000 actual=00000000 : reset before measurement
+# 2925 ps PASS DUT_A (4,4) challenge=0001011 expected=0000000b actual=0000000b : captured response
+# 2925 ps PASS DUT_32 (4,32) challenge=0001011 expected=bbbbbbbb actual=bbbbbbbb : captured response
+# 2925 ps PASS DUT_MIN (1,1) challenge=0001011 expected=00000001 actual=00000001 : captured response
+# 3037 ps PASS DUT_A (4,4) challenge=0001100 expected=00000000 actual=00000000 : reset before measurement
+# 3037 ps PASS DUT_32 (4,32) challenge=0001100 expected=00000000 actual=00000000 : reset before measurement
+# 3150 ps PASS DUT_A (4,4) challenge=0001100 expected=0000000e actual=0000000e : captured response
+# 3150 ps PASS DUT_32 (4,32) challenge=0001100 expected=eeeeeeee actual=eeeeeeee : captured response
+# 3150 ps PASS DUT_MIN (1,1) challenge=0001100 expected=00000000 actual=00000000 : captured response
+# 3262 ps PASS DUT_A (4,4) challenge=0001101 expected=00000000 actual=00000000 : reset before measurement
+# 3262 ps PASS DUT_32 (4,32) challenge=0001101 expected=00000000 actual=00000000 : reset before measurement
+# 3375 ps PASS DUT_A (4,4) challenge=0001101 expected=00000001 actual=00000001 : captured response
+# 3375 ps PASS DUT_32 (4,32) challenge=0001101 expected=11111111 actual=11111111 : captured response
+# 3375 ps PASS DUT_MIN (1,1) challenge=0001101 expected=00000001 actual=00000001 : captured response
+# 3487 ps PASS DUT_A (4,4) challenge=0001110 expected=00000000 actual=00000000 : reset before measurement
+# 3487 ps PASS DUT_32 (4,32) challenge=0001110 expected=00000000 actual=00000000 : reset before measurement
+# 3600 ps PASS DUT_A (4,4) challenge=0001110 expected=00000003 actual=00000003 : captured response
+# 3600 ps PASS DUT_32 (4,32) challenge=0001110 expected=33333333 actual=33333333 : captured response
+# 3600 ps PASS DUT_MIN (1,1) challenge=0001110 expected=00000000 actual=00000000 : captured response
+# 3712 ps PASS DUT_A (4,4) challenge=0001111 expected=00000000 actual=00000000 : reset before measurement
+# 3712 ps PASS DUT_32 (4,32) challenge=0001111 expected=00000000 actual=00000000 : reset before measurement
+# 3825 ps PASS DUT_A (4,4) challenge=0001111 expected=0000000c actual=0000000c : captured response
+# 3825 ps PASS DUT_32 (4,32) challenge=0001111 expected=cccccccc actual=cccccccc : captured response
+# 3825 ps PASS DUT_MIN (1,1) challenge=0001111 expected=00000001 actual=00000001 : captured response
+# Four-bit challenge sweep 2 of 2
+# 3937 ps PASS DUT_A (4,4) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 3937 ps PASS DUT_32 (4,32) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 4050 ps PASS DUT_A (4,4) challenge=0000000 expected=0000000e actual=0000000e : captured response
+# 4050 ps PASS DUT_32 (4,32) challenge=0000000 expected=eeeeeeee actual=eeeeeeee : captured response
+# 4050 ps PASS DUT_MIN (1,1) challenge=0000000 expected=00000000 actual=00000000 : captured response
+# 4162 ps PASS DUT_A (4,4) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 4162 ps PASS DUT_32 (4,32) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 4275 ps PASS DUT_A (4,4) challenge=0000001 expected=00000001 actual=00000001 : captured response
+# 4275 ps PASS DUT_32 (4,32) challenge=0000001 expected=11111111 actual=11111111 : captured response
+# 4275 ps PASS DUT_MIN (1,1) challenge=0000001 expected=00000001 actual=00000001 : captured response
+# 4387 ps PASS DUT_A (4,4) challenge=0000010 expected=00000000 actual=00000000 : reset before measurement
+# 4387 ps PASS DUT_32 (4,32) challenge=0000010 expected=00000000 actual=00000000 : reset before measurement
+# 4500 ps PASS DUT_A (4,4) challenge=0000010 expected=00000002 actual=00000002 : captured response
+# 4500 ps PASS DUT_32 (4,32) challenge=0000010 expected=22222222 actual=22222222 : captured response
+# 4500 ps PASS DUT_MIN (1,1) challenge=0000010 expected=00000000 actual=00000000 : captured response
+# 4612 ps PASS DUT_A (4,4) challenge=0000011 expected=00000000 actual=00000000 : reset before measurement
+# 4612 ps PASS DUT_32 (4,32) challenge=0000011 expected=00000000 actual=00000000 : reset before measurement
+# 4725 ps PASS DUT_A (4,4) challenge=0000011 expected=0000000d actual=0000000d : captured response
+# 4725 ps PASS DUT_32 (4,32) challenge=0000011 expected=dddddddd actual=dddddddd : captured response
+# 4725 ps PASS DUT_MIN (1,1) challenge=0000011 expected=00000001 actual=00000001 : captured response
+# 4837 ps PASS DUT_A (4,4) challenge=0000100 expected=00000000 actual=00000000 : reset before measurement
+# 4837 ps PASS DUT_32 (4,32) challenge=0000100 expected=00000000 actual=00000000 : reset before measurement
+# 4950 ps PASS DUT_A (4,4) challenge=0000100 expected=00000002 actual=00000002 : captured response
+# 4950 ps PASS DUT_32 (4,32) challenge=0000100 expected=22222222 actual=22222222 : captured response
+# 4950 ps PASS DUT_MIN (1,1) challenge=0000100 expected=00000000 actual=00000000 : captured response
+# 5062 ps PASS DUT_A (4,4) challenge=0000101 expected=00000000 actual=00000000 : reset before measurement
+# 5062 ps PASS DUT_32 (4,32) challenge=0000101 expected=00000000 actual=00000000 : reset before measurement
+# 5175 ps PASS DUT_A (4,4) challenge=0000101 expected=0000000d actual=0000000d : captured response
+# 5175 ps PASS DUT_32 (4,32) challenge=0000101 expected=dddddddd actual=dddddddd : captured response
+# 5175 ps PASS DUT_MIN (1,1) challenge=0000101 expected=00000001 actual=00000001 : captured response
+# 5287 ps PASS DUT_A (4,4) challenge=0000110 expected=00000000 actual=00000000 : reset before measurement
+# 5287 ps PASS DUT_32 (4,32) challenge=0000110 expected=00000000 actual=00000000 : reset before measurement
+# 5400 ps PASS DUT_A (4,4) challenge=0000110 expected=0000000c actual=0000000c : captured response
+# 5400 ps PASS DUT_32 (4,32) challenge=0000110 expected=cccccccc actual=cccccccc : captured response
+# 5400 ps PASS DUT_MIN (1,1) challenge=0000110 expected=00000000 actual=00000000 : captured response
+# 5512 ps PASS DUT_A (4,4) challenge=0000111 expected=00000000 actual=00000000 : reset before measurement
+# 5512 ps PASS DUT_32 (4,32) challenge=0000111 expected=00000000 actual=00000000 : reset before measurement
+# 5625 ps PASS DUT_A (4,4) challenge=0000111 expected=00000003 actual=00000003 : captured response
+# 5625 ps PASS DUT_32 (4,32) challenge=0000111 expected=33333333 actual=33333333 : captured response
+# 5625 ps PASS DUT_MIN (1,1) challenge=0000111 expected=00000001 actual=00000001 : captured response
+# 5737 ps PASS DUT_A (4,4) challenge=0001000 expected=00000000 actual=00000000 : reset before measurement
+# 5737 ps PASS DUT_32 (4,32) challenge=0001000 expected=00000000 actual=00000000 : reset before measurement
+# 5850 ps PASS DUT_A (4,4) challenge=0001000 expected=0000000b actual=0000000b : captured response
+# 5850 ps PASS DUT_32 (4,32) challenge=0001000 expected=bbbbbbbb actual=bbbbbbbb : captured response
+# 5850 ps PASS DUT_MIN (1,1) challenge=0001000 expected=00000000 actual=00000000 : captured response
+# 5962 ps PASS DUT_A (4,4) challenge=0001001 expected=00000000 actual=00000000 : reset before measurement
+# 5962 ps PASS DUT_32 (4,32) challenge=0001001 expected=00000000 actual=00000000 : reset before measurement
+# 6075 ps PASS DUT_A (4,4) challenge=0001001 expected=00000004 actual=00000004 : captured response
+# 6075 ps PASS DUT_32 (4,32) challenge=0001001 expected=44444444 actual=44444444 : captured response
+# 6075 ps PASS DUT_MIN (1,1) challenge=0001001 expected=00000001 actual=00000001 : captured response
+# 6187 ps PASS DUT_A (4,4) challenge=0001010 expected=00000000 actual=00000000 : reset before measurement
+# 6187 ps PASS DUT_32 (4,32) challenge=0001010 expected=00000000 actual=00000000 : reset before measurement
+# 6300 ps PASS DUT_A (4,4) challenge=0001010 expected=00000004 actual=00000004 : captured response
+# 6300 ps PASS DUT_32 (4,32) challenge=0001010 expected=44444444 actual=44444444 : captured response
+# 6300 ps PASS DUT_MIN (1,1) challenge=0001010 expected=00000000 actual=00000000 : captured response
+# 6412 ps PASS DUT_A (4,4) challenge=0001011 expected=00000000 actual=00000000 : reset before measurement
+# 6412 ps PASS DUT_32 (4,32) challenge=0001011 expected=00000000 actual=00000000 : reset before measurement
+# 6525 ps PASS DUT_A (4,4) challenge=0001011 expected=0000000b actual=0000000b : captured response
+# 6525 ps PASS DUT_32 (4,32) challenge=0001011 expected=bbbbbbbb actual=bbbbbbbb : captured response
+# 6525 ps PASS DUT_MIN (1,1) challenge=0001011 expected=00000001 actual=00000001 : captured response
+# 6637 ps PASS DUT_A (4,4) challenge=0001100 expected=00000000 actual=00000000 : reset before measurement
+# 6637 ps PASS DUT_32 (4,32) challenge=0001100 expected=00000000 actual=00000000 : reset before measurement
+# 6750 ps PASS DUT_A (4,4) challenge=0001100 expected=0000000e actual=0000000e : captured response
+# 6750 ps PASS DUT_32 (4,32) challenge=0001100 expected=eeeeeeee actual=eeeeeeee : captured response
+# 6750 ps PASS DUT_MIN (1,1) challenge=0001100 expected=00000000 actual=00000000 : captured response
+# 6862 ps PASS DUT_A (4,4) challenge=0001101 expected=00000000 actual=00000000 : reset before measurement
+# 6862 ps PASS DUT_32 (4,32) challenge=0001101 expected=00000000 actual=00000000 : reset before measurement
+# 6975 ps PASS DUT_A (4,4) challenge=0001101 expected=00000001 actual=00000001 : captured response
+# 6975 ps PASS DUT_32 (4,32) challenge=0001101 expected=11111111 actual=11111111 : captured response
+# 6975 ps PASS DUT_MIN (1,1) challenge=0001101 expected=00000001 actual=00000001 : captured response
+# 7087 ps PASS DUT_A (4,4) challenge=0001110 expected=00000000 actual=00000000 : reset before measurement
+# 7087 ps PASS DUT_32 (4,32) challenge=0001110 expected=00000000 actual=00000000 : reset before measurement
+# 7200 ps PASS DUT_A (4,4) challenge=0001110 expected=00000003 actual=00000003 : captured response
+# 7200 ps PASS DUT_32 (4,32) challenge=0001110 expected=33333333 actual=33333333 : captured response
+# 7200 ps PASS DUT_MIN (1,1) challenge=0001110 expected=00000000 actual=00000000 : captured response
+# 7312 ps PASS DUT_A (4,4) challenge=0001111 expected=00000000 actual=00000000 : reset before measurement
+# 7312 ps PASS DUT_32 (4,32) challenge=0001111 expected=00000000 actual=00000000 : reset before measurement
+# 7425 ps PASS DUT_A (4,4) challenge=0001111 expected=0000000c actual=0000000c : captured response
+# 7425 ps PASS DUT_32 (4,32) challenge=0001111 expected=cccccccc actual=cccccccc : captured response
+# 7425 ps PASS DUT_MIN (1,1) challenge=0001111 expected=00000001 actual=00000001 : captured response
+# Seven-bit challenge smoke tests
+# 7537 ps PASS DUT_A (4,4) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 7537 ps PASS DUT_32 (4,32) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 7537 ps PASS DUT_WIDE (7,3) challenge=0000000 expected=00000000 actual=00000000 : reset before measurement
+# 7650 ps PASS DUT_A (4,4) challenge=0000000 expected=0000000e actual=0000000e : captured response
+# 7650 ps PASS DUT_32 (4,32) challenge=0000000 expected=eeeeeeee actual=eeeeeeee : captured response
+# 7650 ps PASS DUT_MIN (1,1) challenge=0000000 expected=00000000 actual=00000000 : captured response
+# 7650 ps PASS DUT_WIDE (7,3) challenge=0000000 expected=00000004 actual=00000004 : captured response
+# 7762 ps PASS DUT_A (4,4) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 7762 ps PASS DUT_32 (4,32) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 7762 ps PASS DUT_WIDE (7,3) challenge=0000001 expected=00000000 actual=00000000 : reset before measurement
+# 7875 ps PASS DUT_A (4,4) challenge=0000001 expected=00000001 actual=00000001 : captured response
+# 7875 ps PASS DUT_32 (4,32) challenge=0000001 expected=11111111 actual=11111111 : captured response
+# 7875 ps PASS DUT_MIN (1,1) challenge=0000001 expected=00000001 actual=00000001 : captured response
+# 7875 ps PASS DUT_WIDE (7,3) challenge=0000001 expected=00000003 actual=00000003 : captured response
+# 7987 ps PASS DUT_A (4,4) challenge=1000000 expected=00000000 actual=00000000 : reset before measurement
+# 7987 ps PASS DUT_32 (4,32) challenge=1000000 expected=00000000 actual=00000000 : reset before measurement
+# 7987 ps PASS DUT_WIDE (7,3) challenge=1000000 expected=00000000 actual=00000000 : reset before measurement
+# 8100 ps PASS DUT_A (4,4) challenge=1000000 expected=0000000e actual=0000000e : captured response
+# 8100 ps PASS DUT_32 (4,32) challenge=1000000 expected=eeeeeeee actual=eeeeeeee : captured response
+# 8100 ps PASS DUT_MIN (1,1) challenge=1000000 expected=00000000 actual=00000000 : captured response
+# 8100 ps PASS DUT_WIDE (7,3) challenge=1000000 expected=00000004 actual=00000004 : captured response
+# 8212 ps PASS DUT_A (4,4) challenge=1010101 expected=00000000 actual=00000000 : reset before measurement
+# 8212 ps PASS DUT_32 (4,32) challenge=1010101 expected=00000000 actual=00000000 : reset before measurement
+# 8212 ps PASS DUT_WIDE (7,3) challenge=1010101 expected=00000000 actual=00000000 : reset before measurement
+# 8325 ps PASS DUT_A (4,4) challenge=1010101 expected=0000000d actual=0000000d : captured response
+# 8325 ps PASS DUT_32 (4,32) challenge=1010101 expected=dddddddd actual=dddddddd : captured response
+# 8325 ps PASS DUT_MIN (1,1) challenge=1010101 expected=00000001 actual=00000001 : captured response
+# 8325 ps PASS DUT_WIDE (7,3) challenge=1010101 expected=00000000 actual=00000000 : captured response
+# 8437 ps PASS DUT_A (4,4) challenge=1111111 expected=00000000 actual=00000000 : reset before measurement
+# 8437 ps PASS DUT_32 (4,32) challenge=1111111 expected=00000000 actual=00000000 : reset before measurement
+# 8437 ps PASS DUT_WIDE (7,3) challenge=1111111 expected=00000000 actual=00000000 : reset before measurement
+# 8550 ps PASS DUT_A (4,4) challenge=1111111 expected=0000000c actual=0000000c : captured response
+# 8550 ps PASS DUT_32 (4,32) challenge=1111111 expected=cccccccc actual=cccccccc : captured response
+# 8550 ps PASS DUT_MIN (1,1) challenge=1111111 expected=00000001 actual=00000001 : captured response
+# 8550 ps PASS DUT_WIDE (7,3) challenge=1111111 expected=00000005 actual=00000005 : captured response
+# 8662 ps PASS DUT_A (4,4) challenge=1111111 expected=0000000c actual=0000000c : response retained after enable falls
+# 8662 ps PASS DUT_32 (4,32) challenge=1111111 expected=cccccccc actual=cccccccc : response retained after enable falls
+# 8662 ps PASS DUT_MIN (1,1) challenge=1111111 expected=00000001 actual=00000001 : response retained after enable falls
+# 8662 ps PASS DUT_WIDE (7,3) challenge=1111111 expected=00000005 actual=00000005 : response retained after enable falls
+# 8775 ps PASS DUT_A (4,4) challenge=1111111 expected=00000000 actual=00000000 : asynchronous reset while clock stays high
+# 8775 ps PASS DUT_MIN (1,1) challenge=1111111 expected=00000000 actual=00000000 : asynchronous reset while clock stays high
+# 8775 ps PASS DUT_32 (4,32) challenge=1111111 expected=00000000 actual=00000000 : asynchronous reset while clock stays high
+# 8775 ps PASS DUT_WIDE (7,3) challenge=1111111 expected=00000000 actual=00000000 : asynchronous reset while clock stays high
+# 8887 ps PASS DUT_A (4,4) challenge=1111111 expected=00000000 actual=00000000 : no recapture without a new clock edge
+# 8887 ps PASS DUT_MIN (1,1) challenge=1111111 expected=00000000 actual=00000000 : no recapture without a new clock edge
+# 8887 ps PASS DUT_32 (4,32) challenge=1111111 expected=00000000 actual=00000000 : no recapture without a new clock edge
+# 8887 ps PASS DUT_WIDE (7,3) challenge=1111111 expected=00000000 actual=00000000 : no recapture without a new clock edge
+# PASS: all 215 checks passed; 0 failures.
+# ** Note: $stop    : ../tb/tb_arbiter_puf.v(182)
+#    Time: 8887 ps  Iteration: 0  Instance: /tb_arbiter_puf
+# Break in Module tb_arbiter_puf at ../tb/tb_arbiter_puf.v line 182
+# quit -f
+# End time: 10:10:22 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

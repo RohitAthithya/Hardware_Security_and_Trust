@@ -49,43 +49,43 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50_B5B -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50_B6A -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to CLOCK_50_B7A -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to CLOCK_50_B8A -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CPU_RESET_n -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[0] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[1] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[2] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[3] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[0] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[1] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[2] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[3] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[4] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[5] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[6] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[7] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[0] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[1] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[2] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[3] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[4] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[5] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[6] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[7] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[8] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[9] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[0] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[1] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[2] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[3] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[4] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[5] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[6] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[7] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[8] -entity cyclone_v_top
-set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[9] -entity cyclone_v_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50_B5B
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50_B6A
+set_instance_assignment -name IO_STANDARD "2.5 V" -to CLOCK_50_B7A
+set_instance_assignment -name IO_STANDARD "2.5 V" -to CLOCK_50_B8A
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CPU_RESET_n
+set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to KEY[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDG[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LEDR[9]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[1]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[2]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[3]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[4]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[5]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[6]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[7]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[8]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to SW[9]
 set_location_assignment PIN_R20 -to CLOCK_50_B5B
 set_location_assignment PIN_N20 -to CLOCK_50_B6A
 set_location_assignment PIN_H12 -to CLOCK_50_B7A
