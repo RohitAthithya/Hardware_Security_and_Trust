@@ -1,0 +1,69 @@
+
+applications/binaries/uart_example:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <_start>:
+   0:	00000013          	addi	zero,zero,0
+   4:	00000093          	addi	ra,zero,0
+   8:	00002137          	lui	sp,0x2
+   c:	00000193          	addi	gp,zero,0
+  10:	00000213          	addi	tp,zero,0
+  14:	00000293          	addi	t0,zero,0
+  18:	00000313          	addi	t1,zero,0
+  1c:	00000393          	addi	t2,zero,0
+  20:	00000413          	addi	s0,zero,0
+  24:	00000513          	addi	a0,zero,0
+  28:	00000593          	addi	a1,zero,0
+  2c:	00000613          	addi	a2,zero,0
+  30:	00000693          	addi	a3,zero,0
+  34:	00000693          	addi	a3,zero,0
+  38:	00000713          	addi	a4,zero,0
+  3c:	000c07b7          	lui	a5,0xc0
+  40:	0207879b          	addiw	a5,a5,32
+  44:	00000813          	addi	a6,zero,0
+  48:	00000893          	addi	a7,zero,0
+  4c:	00000913          	addi	s2,zero,0
+  50:	00000993          	addi	s3,zero,0
+  54:	00000a13          	addi	s4,zero,0
+  58:	00000a93          	addi	s5,zero,0
+  5c:	00000b13          	addi	s6,zero,0
+  60:	00000b93          	addi	s7,zero,0
+  64:	00000c13          	addi	s8,zero,0
+  68:	00000c93          	addi	s9,zero,0
+  6c:	00000d13          	addi	s10,zero,0
+  70:	00000d93          	addi	s11,zero,0
+  74:	00000e13          	addi	t3,zero,0
+  78:	00000e93          	addi	t4,zero,0
+  7c:	00000f13          	addi	t5,zero,0
+  80:	00000f93          	addi	t6,zero,0
+
+0000000000000084 <print_hello>:
+  84:	0d800f13          	addi	t5,zero,216
+  88:	000f4f83          	lbu	t6,0(t5)
+  8c:	0100006f          	jal	zero,9c <rdy_while_condition>
+
+0000000000000090 <rdy_while_top>:
+  90:	01f78023          	sb	t6,0(a5) # c0000 <__BSS_END__+0xbf000>
+  94:	001f0f13          	addi	t5,t5,1
+  98:	000f4f83          	lbu	t6,0(t5)
+
+000000000000009c <rdy_while_condition>:
+  9c:	fe0f9ae3          	bne	t6,zero,90 <rdy_while_top>
+
+00000000000000a0 <end>:
+  a0:	00000013          	addi	zero,zero,0
+  a4:	00000013          	addi	zero,zero,0
+  a8:	00000013          	addi	zero,zero,0
+  ac:	00000013          	addi	zero,zero,0
+  b0:	00000013          	addi	zero,zero,0
+  b4:	00000013          	addi	zero,zero,0
+  b8:	00000013          	addi	zero,zero,0
+  bc:	00000013          	addi	zero,zero,0
+  c0:	00000013          	addi	zero,zero,0
+  c4:	00000013          	addi	zero,zero,0
+  c8:	00000013          	addi	zero,zero,0
+  cc:	00000013          	addi	zero,zero,0
+  d0:	00000013          	addi	zero,zero,0
+  d4:	fcdff06f          	jal	zero,a0 <end>

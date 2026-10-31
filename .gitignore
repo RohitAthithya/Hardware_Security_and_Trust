@@ -1,4 +1,3 @@
-*.pdf
 
 *.do
 *.qdb
@@ -10,6 +9,7 @@
 *.rules
 *.log
 
+*.pdf
 *.jpg
 *.png
 
